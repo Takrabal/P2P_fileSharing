@@ -33,7 +33,7 @@ def Send():
         s.bind((host,port))
         s.listen(1)
         print(host)
-        print("waiting for any incoming connections....")
+        print("waiting for any incoming connections...")
         conn,addr=s.accept()
         file=open(filename,'rb')
         file_data=file.read(1024)
@@ -83,7 +83,7 @@ def Receive():
         file_data=s.recv(1024)
         file.write(file_data)
         file.close()
-        print("file and data has been received successfully")
+        print("file has been received successfully")
 
 
     #icon
